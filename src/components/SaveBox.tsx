@@ -1,5 +1,4 @@
 import { useState } from "react";
-import DepositNaira from "../components/DepositNaira";
 import HandleSavings from "../components/HandleSavings";
 import StakeUSDe from "./Stake";
 

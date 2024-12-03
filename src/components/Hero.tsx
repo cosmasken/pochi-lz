@@ -28,7 +28,7 @@ const Hero = () => {
           md:w-[70%] md:mx-auto lg:w-[60%] lg:text-2xl"
           >
             Hedge against hyperinflation and impulse spending by swapping your
-            naira and saving on the security and transparency of the blockchain.
+            KES and saving on the security and transparency of the blockchain.
           </p>
 
           <div className="flex items-center justify-center">
