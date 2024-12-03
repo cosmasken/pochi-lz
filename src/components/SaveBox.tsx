@@ -1,6 +1,7 @@
 import { useState } from "react";
 import HandleSavings from "../components/HandleSavings";
 import StakeUSDe from "./Stake";
+import BridgeComponent from "./Bridge";
 
 const SaveBox = () => {
   const [selected, setSelected] = useState("deposit");
@@ -14,6 +15,8 @@ const SaveBox = () => {
       <HandleSavings/>
       Stake USDe on Ethena Network
       <StakeUSDe/>
+      Bridge
+      <BridgeComponent />
       </div>
     </aside>
   );

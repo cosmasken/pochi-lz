@@ -26,7 +26,7 @@ export default async function handler(
     account,
     // chain: chain == "84531" ? bletestnet : lineaTestnet,
     chain: bletestnet,
-    transport: http(),
+    transport: http('https://testnet.rpc.ethena.fi'),
   }).extend(publicActions);
 
   if (req.method === "POST") {
@@ -36,11 +36,9 @@ export default async function handler(
       //prepare txn
       const { request } = await client.simulateContract({
         //@ts-ignore
-        //address: connect?.[chain]?.usde.address,
-        address:connect[52085143].usde.address,
+        address:connect?.usde.address,
         //@ts-ignore
-        // abi: connect?.[chain]?.usde?.abi,
-        abi: connect[52085143].usde.abi,
+        abi: connect?.usde.abi,
         functionName: "transfer",
         args: [receiverAddress, ethers.parseEther(amount)],
       });

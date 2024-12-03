@@ -8,10 +8,8 @@ const useGetBalance = (currency: string) => {
 
   const { data: balance } = useContractRead({
     //@ts-ignore
-    //address: connect?.[chain?.id]?.[currency]?.address,
     address:connect?.[currency]?.address,
     //@ts-ignore
-    //abi: connect?.[chain?.id]?.[currency]?.abi,
     abi:connect?.[currency]?.abi,
     functionName: "balanceOf",
     args: [address],

@@ -2,7 +2,7 @@ import { defineChain } from "viem";
 const bletestnet = defineChain({
     id: 52085143, // Chain ID for your custom network
     name: 'BLE Testnet',
-    network: 'custom-network',
+    network: 'ble-testnet',
     nativeCurrency: {
       name: 'Ether',
       symbol: 'ETH',

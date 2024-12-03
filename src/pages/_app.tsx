@@ -3,6 +3,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import type { AppProps } from "next/app";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import { InjectedConnector } from 'wagmi/connectors/injected'
 import { sepolia } from "wagmi/chains";
 import { bletestnet } from "./api/chains";
 import { publicProvider } from "wagmi/providers/public";
@@ -30,7 +31,7 @@ const { connectors } = getDefaultWallets({
 });
 
 const wagmiConfig = createConfig({
-  autoConnect: true,
+  //autoConnect: true,
   connectors,
   publicClient,
   webSocketPublicClient,
